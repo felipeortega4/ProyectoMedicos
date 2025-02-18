@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+
+    <script>
+        function suma() {
+            let r = parseFloat(document.getElementById("a").value) +
+                parseFloat(document.getElementById("b").value);
+
+            document.getElementById("Resultado").textContent = "Resultado: " + r;
+        }
+        function resta() {
+            let r = parseFloat(document.getElementById("a").value) -
+                parseFloat(document.getElementById("b").value);
+
+            document.getElementById("Resultado").textContent = "Resultado: " + r;
+
+        }
+        function mult() {
+            let r = parseFloat(document.getElementById("a").value) *
+                parseFloat(document.getElementById("b").value);
+        }
+        function division() {
+            let r = parseFloat(document.getElementById("a").value) /
+                parseFloat(document.getElementById("b").value);
+            document.getElementById("Resultado").textContent = "Resultado: " + r;
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <input type="number" name="a" id="a" placeholder="ingrese un numero">
+            </td>
+            <td>
+                <input type="number" name="b" id="b" placeholder="ingrese otro numero">
+            </td>
+            <td>
+                <label for="resultado" id="Resultado">:</label>
+            </td>
+        <tr>
+            <td>
+
+                <button type="button" onclick="suma()">+</button>
+            </td>
+            <td>
+                <button type="button" onclick="resta()">-</button>
+            </td>
+            <td>
+                <button type="button" onclick="mult()">*</button>
+            </td>
+            <td>
+                <button type="button" onclick="division()">/</button>
+            </td>
+        </tr>
+        </tr>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
