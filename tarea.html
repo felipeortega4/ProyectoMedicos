@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/estilos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .card-img-top {
+            width: 355px;
+            height: 300px;
+            object-fit: cover;
+        }
+        .card {
+            background-color: #e3f2fd; /* Azul claro */
+            border: 1px solid #90caf9; /* Azul más oscuro */
+        }
+        .card-body {
+            background-color: #bbdefb; /* Azul claro */
+        }
+        .btn-primary {
+            background-color: #64b5f6; /* Azul */
+            border-color: #64b5f6;
+        }
+        .btn-primary:hover {
+            background-color:hsl(207, 54%, 35%);/* Azul más oscuro */
+            border-color: hsl(207, 54%, 35%);
+        }
+    </style>
+</head>
+<body>
+    <!-- seccion de encabezado -->
+    <header>
+        <img src="./imagenes/ImagenMedica.jpg" class="img-fluid" alt="Encabezado">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid" style="background-color: #00c3ff9a;">
+                <a class="navbar-brand" href="#">DocFinder</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav d-flex justify-content-end w-100 fw-bold">
+                        <li class="nav-item  mx-lg-3 ">
+                            <a class="nav-link" href="#">Catalogo de Servicios</a>
+                        </li>
+                        <li class="nav-item  mx-lg-3">
+                            <a class="nav-link" href="#">Atencion al cliente</a>
+                        </li>
+                        <li class="nav-item  mx-lg-3">
+                            <a class="nav-link" href="#">Quienes somos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Seccion de video -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <a href="#!" data-bs-toggle="modal" data-bs-target="#modal1">
+                        <img src="https://img.youtube.com/vi/HVpXHxRqZTs/0.jpg" class="card-img-top" alt="Dr. Juan Pérez - Anestesiología">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Dr. Juan Pérez - Anestesiología</h5>
+                        <a href="https://youtu.be/HVpXHxRqZTs?si=kASsXDsjluY8uv1f" class="btn btn-primary" target="_blank">Ver en YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <a href="#!" data-bs-toggle="modal" data-bs-target="#modal2">
+                        <img src="https://img.youtube.com/vi/6FkFIt0KaRo/0.jpg" class="card-img-top" alt="Dr. María Rodríguez - Pediatría">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Dr. María Rodríguez - Pediatría</h5>
+                        <a href="https://youtu.be/6FkFIt0KaRo?si=9HRFhd7Sjt2IGFoV" class="btn btn-primary" target="_blank">Ver en YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <a href="#!" data-bs-toggle="modal" data-bs-target="#modal3">
+                        <img src="https://img.youtube.com/vi/s3WcbuQ6LhQ/0.jpg" class="card-img-top" alt="Dr. Carlos López - Cirugía">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Dr. Carlos López - Cirugía</h5>
+                        <a href="https://youtu.be/s3WcbuQ6LhQ?si=usEm4ef7bBINQuOA" class="btn btn-primary" target="_blank">Ver en YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <a href="#!" data-bs-toggle="modal" data-bs-target="#modal4">
+                        <img src="https://img.youtube.com/vi/e7m9AOL3mdY/0.jpg" class="card-img-top" alt="Dr. Ana Paulina García Bañuelos">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Dr. Ana Paulina García Bañuelos</h5>
+                        <a href="https://youtu.be/e7m9AOL3mdY?si=qMz4xF7nXez4BKG9" class="btn btn-primary" target="_blank">Ver en YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <a href="#!" data-bs-toggle="modal" data-bs-target="#modal5">
+                        <img src="https://staticnew-prod.topdoctors.es/provider/1090770/image/profile/large/prof_17091_20230322111422.png?width=648/format=png" class="card-img-top" alt="Dr. Pedro Martínez - Psiquiatría">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Dr. Pedro Martínez - Psiquiatría</h5>
+                        <a href="https://youtu.be/mhPZrfaewc0?si=VKFVM7N9RCGuXq0P" class="btn btn-primary" target="_blank">Ver en YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <a href="#!" data-bs-toggle="modal" data-bs-target="#modal6">
+                        <img src="https://media.licdn.com/dms/image/sync/v2/D4D27AQHA5YExjb7b0g/articleshare-shrink_800/articleshare-shrink_800/0/1718962700427?e=2147483647&v=beta&t=-wxos27qrpc5rUcxaHJ3hIWiZxxnczjVk1e0e8Y6TWw" class="card-img-top" alt="Dr. Laura Fernández - Dermatología">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Dr. Laura Fernández - Dermatología</h5>
+                        <a href="https://youtu.be/0xiXY1Lx_Cw?si=Z2IuyT0UGII3ldFR" class="btn btn-primary" target="_blank">Ver en YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <a href="#!" data-bs-toggle="modal" data-bs-target="#modal7">
+                        <img src="https://img.youtube.com/vi/5r5UePOgMQU/0.jpg" class="card-img-top" alt="Dr. Miguel Torres - Cardiología">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Dr. Miguel Torres - Cardiología</h5>
+                        <a href="https://youtu.be/5r5UePOgMQU" class="btn btn-primary" target="_blank">Ver en YouTube</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modales -->
+    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/HVpXHxRqZTs" title="YouTube video" allowfullscreen></iframe>
+                </div>
+                <div class="text-center py-3">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/6FkFIt0KaRo" title="YouTube video" allowfullscreen></iframe>
+                </div>
+                <div class="text-center py-3">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/s3WcbuQ6LhQ" title="YouTube video" allowfullscreen></iframe>
+                </div>
+                <div class="text-center py-3">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modal4Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/e7m9AOL3mdY" title="YouTube video" allowfullscreen></iframe>
+                </div>
+                <div class="text-center py-3">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="modal5Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/mhPZrfaewc0" title="YouTube video" allowfullscreen></iframe>
+                </div>
+                <div class="text-center py-3">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="modal6Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/0xiXY1Lx_Cw" title="YouTube video" allowfullscreen></iframe>
+                </div>
+                <div class="text-center py-3">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal7" tabindex="-1" aria-labelledby="modal7Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/5r5UePOgMQU" title="YouTube video" allowfullscreen></iframe>
+                </div>
+                <div class="text-center py-3">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
