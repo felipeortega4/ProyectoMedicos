@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Eventos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h2>Registro de Eventos</h2>
+    
+    <form>
+        <label for="evento">Selecciona un evento:</label>
+        <select id="evento">
+            <option value="">--Selecciona un evento--</option>
+            <option value="Evento 1">Evento 1</option>
+            <option value="Evento 2">Evento 2</option>
+            <option value="Evento 3">Evento 3</option>
+        </select>
+    </form>
+    
+    <div id="infoEvento"></div>
+    
+    <form id="formRegistro" style="display: none;">
+        <h3>Formulario de Registro</h3>
+        
+        <label for="tipoDoc">Tipo de Documento:</label>
+        <select id="tipoDoc" required>
+            <option value="Cédula">Cédula</option>
+            <option value="Pasaporte">Pasaporte</option>
+            <option value="DNI">DNI</option>
+        </select>
+        <br>
+
+        <label for="numDoc">Número de Documento:</label>
+        <input type="text" id="numDoc" required>
+        <br>
+
+        <label for="nombre">Nombre Completo:</label>
+        <input type="text" id="nombre" required>
+        <br>
+
+        <label for="curso">Curso que Realiza:</label>
+        <input type="text" id="curso" required>
+        <br>
+
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" required>
+        <br>
+
+        <button type="submit">Registrarse</button>
+    </form>
+
+    <div class="buscar" style="display: block; margin: 20px auto; max-width: 500px;">
+        <h3>Buscar Registrado por Nombre o Documento</h3>
+        <input type="text" id="busqueda" placeholder="Ingrese nombre o número de documento">
+        <button id="buscarBtn">Buscar</button>
+    </div>
+</body>
+</html>
